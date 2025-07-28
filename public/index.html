@@ -1,43 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Pavan Kumar GR - Tech Enthusiast" />
+  
+  <!-- Favicon (appears in browser tab) -->
+  <link rel="icon" type="image/x-icon" href="PK.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="PK.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="PK.png" />
+  
+  <!-- Apple Touch Icon (for iOS devices) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="PK.png" />
+  
+  <!-- Android Chrome Icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="PK.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="PK.png" />
+  
+  <!-- Open Graph Meta Tags (for social media sharing) -->
+  <meta property="og:title" content="Pavan Kumar GR - Portfolio" />
+  <meta property="og:description" content="Full Stack Developer | React Specialist | Tech Enthusiast" />
+  <meta property="og:image" content="PK.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pavan Kumar GR - Portfolio" />
+  <meta name="twitter:description" content="Full Stack Developer | React Specialist | Tech Enthusiast" />
+  <meta name="twitter:image" content="PK.jpg" />
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- Preload important images for better performance -->
+  <link rel="preload" as="image" href="PK.jpg" />
+  <link rel="preload" as="image" href="PK.jpg" />
+  
+  <title>Pavan Kumar GR - Portfolio</title>
+</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'gradient-x': 'gradient-x 15s ease infinite',
+              'gradient-y': 'gradient-y 15s ease infinite',
+            },
+            keyframes: {
+              'gradient-y': {
+                '0%, 100%': {
+                  'background-size': '400% 400%',
+                  'background-position': 'center top'
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'center center'
+                }
+              },
+              'gradient-x': {
+                '0%, 100%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'left center'
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'right center'
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
