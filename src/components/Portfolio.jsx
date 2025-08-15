@@ -804,10 +804,10 @@ const App = () => { // Renamed Portfolio to App for default export
                   <Phone size={16} />
                   <span>+91 6363845197</span>
                 </a>
-                <a href="mailto:pavankumargr1904@gmail.com" className="text-gray-400 hover:text-purple-400 transition-colors flex items-center justify-center md:justify-start space-x-2">
+                <button><a href="mailto:pavankumargr1904@gmail.com" className="text-gray-400 hover:text-purple-400 transition-colors flex items-center justify-center md:justify-start space-x-2">
                   <Mail size={16} />
                   <span>pavankumargr1904@gmail.com</span>
-                </a>
+                </a></button>
               </div>
             </div>
           </div>
