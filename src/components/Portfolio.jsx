@@ -387,7 +387,7 @@ const App = () => { // Renamed Portfolio to App for default export
                   </span>
                 </button>
                 <a
-                  href="https://drive.google.com/file/d/1Qf3XCVNEkaFiB2AIV0Yb9S9CfA0oluGo/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1Qf3XCVNEkaFiB2AIV0Yb9S9CfA0oluGo/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group px-8 py-4 border-2 border-violet-500/50 rounded-full font-semibold text-lg hover:bg-violet-500/10 hover:from-violet-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 border border-violet-500/20 flex items-center justify-center gap-3 shadow-xl backdrop-blur-sm"
